@@ -10,5 +10,5 @@ app.get('/', (req, res) => {
 })
 
 app.listen(port, () => {
-	console.log(`Running on port ${port} ✅✅`.cyan)
+	console.log(`Running the on port ${port} ✅✅`.cyan)
 })
