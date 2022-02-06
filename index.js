@@ -9,6 +9,12 @@ app.get('/', (req, res) => {
 	res.json({ Backend: 'API Running now', Colors: colors.enabled, Path: `The path is ${url}` })
 })
 
+app.get('/home', (req, res) => {
+	const url = req.route.path
+	console.log(`The path is http://localhost:3000${url}`.yellow)
+	res.json({ Backend: 'API Running now', Colors: colors.enabled, Path: `The path is ${url}` })
+})
+
 app.listen(port, () => {
 	console.log(`Running the on port ${port} ✅✅`.cyan)
 })
